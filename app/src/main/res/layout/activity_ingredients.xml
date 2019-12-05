@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="2dp"
-                        android:text="10 items"
+                        android:text="@string/_10_items"
                         android:textColor="@color/white"
                         android:textSize="17sp"
                         android:id="@+id/ingredientListItemCounter"
@@ -108,7 +108,7 @@
                     <TextView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Order list by name"
+                        android:text="@string/order_list_by_name"
                         android:textSize="17sp"
                         android:textColor="@color/white"
                         android:layout_marginLeft="10dp"/>
@@ -129,7 +129,7 @@
                             <RadioButton android:id="@+id/radio_az"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="A-Z "
+                                android:text="@string/a_z"
                                 android:textColor="@color/white"
                                 android:onClick="loadItemsInAZOrder"
                                  />
@@ -137,14 +137,14 @@
                             <RadioButton android:id="@+id/radio_za"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Z-A "
+                                android:text="@string/z_a"
                                 android:textColor="@color/white"
                                 android:onClick="loadItemsInZAOrder"
                                 />
                             <RadioButton android:id="@+id/radio_none"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="None"
+                                android:text="@string/none"
                                 android:textColor="@color/white"
                                 android:onClick="loadItemsInNoneOrder"
                                 />

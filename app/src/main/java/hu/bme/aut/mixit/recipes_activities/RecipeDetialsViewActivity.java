@@ -17,6 +17,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -147,7 +149,14 @@ public class RecipeDetialsViewActivity extends AppCompatActivity {
 
         }
 
+        TextView amounttext = (TextView)findViewById(R.id.recipe_measure_liquid);
+        amounttext.setText(recipe.getAmount() + " ml");
 
+        TextView pricetext = (TextView)findViewById(R.id.recipe_price);
+        pricetext.setText(recipe.getPrice() + " HUF");
+
+        TextView alctext = (TextView)findViewById(R.id.recipe_percent);
+        alctext.setText(recipe.getAlc() + " %");
 
     }
 

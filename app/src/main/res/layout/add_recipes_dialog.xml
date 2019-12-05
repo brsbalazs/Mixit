@@ -10,7 +10,7 @@
         android:id="@+id/recipe_name_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name of the recipe"
+        android:text="@string/name_of_the_recipe"
         android:layout_marginHorizontal="15dp"/>
 
     <EditText
@@ -36,13 +36,13 @@
             android:id="@+id/ingredients_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingredients"
+            android:text="@string/ingredients"
             android:layout_weight="1"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="add new ingredient"
+            android:text="@string/add_new_ingredient"
             android:layout_weight="1"
             android:padding="5dp"
             android:id="@+id/add_ingredient_button"/>

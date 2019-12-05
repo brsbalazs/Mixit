@@ -23,7 +23,7 @@ tools:showIn="@layout/activity_settings"
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your name"
+        android:text="@string/your_name"
         />
 
     <EditText
@@ -40,7 +40,7 @@ tools:showIn="@layout/activity_settings"
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your age"
+        android:text="@string/your_age"
         />
 
     <EditText
@@ -58,7 +58,7 @@ tools:showIn="@layout/activity_settings"
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your grender"
+        android:text="@string/your_gender"
         />
 
     <LinearLayout
@@ -76,7 +76,7 @@ tools:showIn="@layout/activity_settings"
             <RadioButton android:id="@+id/radio_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Female"
+                android:text="@string/female"
                 android:textColor="@color/black"
                 android:layout_marginRight="30dp"
                 />
@@ -84,7 +84,7 @@ tools:showIn="@layout/activity_settings"
             <RadioButton android:id="@+id/radio_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Male"
+                android:text="@string/male"
                 android:textColor="@color/black"
                 />
 
@@ -99,7 +99,7 @@ tools:showIn="@layout/activity_settings"
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your weight in kilogramms"
+        android:text="@string/your_weight_in_kilogramms"
         />
 
     <NumberPicker
@@ -116,7 +116,7 @@ tools:showIn="@layout/activity_settings"
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your height in centimeters"
+        android:text="@string/your_height_in_centimeters"
         />
 
     <NumberPicker
@@ -130,7 +130,7 @@ tools:showIn="@layout/activity_settings"
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="Save changes"
+        android:text="@string/save_changes"
         android:layout_gravity="center_horizontal"
         android:id="@+id/save_changes"/>
 

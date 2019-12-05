@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="v 1.0.0"
+        android:text="@string/v_1_0_0"
         android:gravity="center_horizontal"
         android:layout_marginTop="340dp"/>
 
@@ -41,7 +41,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Developed by"
+        android:text="@string/developed_by"
         android:gravity="center_horizontal"
         android:layout_marginTop="390dp"
         android:textSize="13sp"/>
@@ -49,7 +49,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Balázs Béres"
+        android:text="@string/bal_zs_b_res"
         android:textSize="22sp"
         android:gravity="center_horizontal"
         android:layout_marginTop="410dp"/>

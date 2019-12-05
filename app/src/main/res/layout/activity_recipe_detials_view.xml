@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Recipe"
+                android:text="@string/recipe"
                 android:textColor="@color/white"
                 android:textSize="21sp"
                 android:id="@+id/toolbar_text"

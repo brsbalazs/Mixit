@@ -45,6 +45,13 @@ public class RecipeItem
         this.recipeId = recipeId;
     }
 
+    @Ignore
+    public RecipeItem(long ingredient_id, double amount, long recipeId) {
+        this.ingredient_id = ingredient_id;
+        this.amount = amount;
+        this.recipeId = recipeId;
+    }
+
     public long getId() {
         return id;
     }

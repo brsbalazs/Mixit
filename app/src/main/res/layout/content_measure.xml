@@ -28,7 +28,7 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Beverages consumed during the recent 12 hours"
+        android:text="@string/beverages_consumed_during_the_recent_12_hours"
         android:layout_marginLeft="20dp"/>
 
 

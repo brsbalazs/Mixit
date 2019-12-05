@@ -35,6 +35,13 @@ public class Ingredient
         this.price = price;
     }
 
+    @Ignore
+    public Ingredient(String name, double alc, int price) {
+        this.name = name;
+        this.alc = alc;
+        this.price = price;
+    }
+
     public Ingredient() {
     }
 

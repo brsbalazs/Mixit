@@ -36,6 +36,11 @@ public class Recipe
         this.id = id;
     }
 
+    @Ignore
+    public Recipe(String name) {
+        this.name = name;
+    }
+
     public int getAmount() {
         return amount;
     }

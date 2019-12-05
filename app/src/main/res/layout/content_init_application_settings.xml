@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="v 1.0.0"
+                android:text="@string/v_1_0_0"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="260dp"/>
 
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your name"
+                android:text="@string/your_name"
                 />
 
             <EditText
@@ -115,7 +115,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your age"
+                android:text="@string/your_age"
                 />
 
             <EditText
@@ -133,7 +133,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your grender"
+                android:text="@string/your_gender"
                 />
 
             <LinearLayout
@@ -151,7 +151,7 @@
                     <RadioButton android:id="@+id/initGenderFemaleRadio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Female"
+                        android:text="@string/female"
                         android:textColor="@color/black"
                         android:layout_marginRight="30dp"
                         />
@@ -159,7 +159,7 @@
                     <RadioButton android:id="@+id/initGenderMaleRadio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Male"
+                        android:text="@string/male"
                         android:textColor="@color/black"
                         />
 
@@ -174,7 +174,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your weight in kilogramms"
+                android:text="@string/your_weight_in_kilogramms"
                 />
 
             <NumberPicker
@@ -191,7 +191,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your height in centimeters"
+                android:text="@string/your_height_in_centimeters"
                 />
 
             <NumberPicker

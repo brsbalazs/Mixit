@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ingredient"
+                android:text="@string/ingredient"
                 android:layout_marginLeft="5dp"/>
 
 
@@ -63,7 +63,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Amount (ml)"/>
+                android:text="@string/amount_ml"/>
 
             <EditText
                 android:layout_height="50dp"
@@ -77,7 +77,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="delete item"
+                android:text="@string/delete_item"
                 android:id="@+id/delete_ingredient"
                 />
 
