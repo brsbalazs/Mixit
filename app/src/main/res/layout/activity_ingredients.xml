@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ingredients_activities.IngredientsActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/ingredient_view"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <ImageView
+                    android:id="@+id/menulogo"
+                    android:layout_width="300dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="-25dp"
+                    android:src="@drawable/ingredients_logo_text"
+                    />
+
+                <ImageView
+                    android:id="@+id/menulogotext"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.00"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/roundiconred"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="1dp"
+                android:orientation="horizontal"
+
+                android:weightSum="50">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="27"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="10 items"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:id="@+id/ingredientListItemCounter"
+                        />
+
+                    <androidx.appcompat.widget.SearchView
+                        style="@style/SearchViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_white_rounded"
+                        android:id="@+id/searchView"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="23"
+                    >
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Order list by name"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp">
+
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <RadioButton android:id="@+id/radio_az"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A-Z "
+                                android:textColor="@color/white"
+                                android:onClick="loadItemsInAZOrder"
+                                 />
+
+                            <RadioButton android:id="@+id/radio_za"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Z-A "
+                                android:textColor="@color/white"
+                                android:onClick="loadItemsInZAOrder"
+                                />
+                            <RadioButton android:id="@+id/radio_none"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="None"
+                                android:textColor="@color/white"
+                                android:onClick="loadItemsInNoneOrder"
+                                />
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include
+        layout="@layout/content_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/add_white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".history_activities.HistoryActivity"
+    tools:showIn="@layout/activity_history">
+
+    <LinearLayout
+        android:id="@+id/history_list_of_rows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:showDividers="middle"
+        android:layout_marginHorizontal="10dp"
+
+        >
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

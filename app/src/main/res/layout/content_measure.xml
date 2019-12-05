@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".measure_activities.MeasureActivity"
+    tools:showIn="@layout/activity_measure"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:orientation="vertical"
+        >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/percentChart"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Beverages consumed during the recent 12 hours"
+        android:layout_marginLeft="20dp"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="7dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/measure_list_of_rows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="60dp"
+            android:showDividers="middle"
+            android:layout_marginHorizontal="10dp"
+
+            >
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

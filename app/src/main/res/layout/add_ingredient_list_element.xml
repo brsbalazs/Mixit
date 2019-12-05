@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addIngredientListCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/grey"
+    android:layout_marginVertical="20dp"
+    android:background="@color/grey"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:background="@color/grey"
+        android:layout_marginTop="9dp"
+        >
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredient"
+                android:layout_marginLeft="5dp"/>
+
+
+            <Spinner
+                android:id="@+id/choose_ingredient_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scrollbarSize="@android:dimen/dialog_min_width_minor"
+               />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:background="@color/grey"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount (ml)"/>
+
+            <EditText
+                android:layout_height="50dp"
+                android:layout_width="130dp"
+                android:id="@+id/ingredient_amount_edittext"
+                android:inputType="number"
+                android:gravity="left"
+           />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delete item"
+                android:id="@+id/delete_ingredient"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+

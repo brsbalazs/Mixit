@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context=".mixing_activities.MixingActivity"
+tools:showIn="@layout/activity_settings"
+    >
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mixing_list_of_rows"
+    android:divider="@drawable/divider"
+    android:layout_margin="25dp"
+    android:showDividers="middle"
+    android:layout_marginBottom="5dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your name"
+        />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true"
+        android:id="@+id/settings_name_edittext"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your age"
+        />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:id="@+id/settings_age_edittext"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your grender"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"
+                />
+
+            <RadioButton android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/black"
+                />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your weight in kilogramms"
+        />
+
+    <NumberPicker
+        android:id="@+id/WeightNumberPicker"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your height in centimeters"
+        />
+
+    <NumberPicker
+        android:id="@+id/HeightNumberPicker"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Save changes"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/save_changes"/>
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
